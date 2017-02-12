@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Notifications Helper",
+	"version": "0.1",
+	"content_scripts": [
+		{
+		    "matches": [
+		      "*://*.mixpanel.com/*"
+		    ],
+		    "js": ["content.js"]
+		}
+	],
+	"browser_action": {
+		"default_icon": "images/PEO-weary_cat_face.svg16.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	 "icons": { 
+		"16":"images/PEO-weary_cat_face.svg16.png", 
+		"48":"images/PEO-weary_cat_face.svg48.png", 
+		"128":"images/PEO-weary_cat_face.svg128.png" 
+    } 
+}
